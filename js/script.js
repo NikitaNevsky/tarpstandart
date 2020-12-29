@@ -41,3 +41,29 @@ $('form.ajax').submit(function() {
 
     return false
 });
+
+$('.portfolio__list').owlCarousel({
+    loop:true,
+    margin:19,
+    nav:false,
+    navText: ['<span class="arrow-left"><img src="images/arrow-left.svg" /></span>','<span class="arrow-right"><img src="images/arrow-right.svg" /></span>'],
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
+})
+
+$('.product-slider').owlCarousel({
+    loop:true,
+    nav:false,
+    dots:false,
+    navText: ['<span class="arrow-left"><img src="images/arrow-left.svg" /></span>','<span class="arrow-right"><img src="images/arrow-right.svg" /></span>'],
+    items:1
+})
