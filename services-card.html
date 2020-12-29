@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тарпстандарт - Контейнерные поставки</title>
+
+    <meta name="description" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta name="yandex-verification" content="">
+    <!--- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <!--- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!--- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--- Bootstrap select -->
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <!-- ArcticModal -->
+    <link rel="stylesheet" href="css/jquery.arcticmodal-0.3.css">
+    <!--- OWL Carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/sweetAlert.css">
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="logo">
+                        <span>Оптовая продажа тканей и текстильных материалов с покрытием</span>
+                    </a>
+                </div>
+                <div class="authorization">
+                    <div class="authorization__top">
+                        <div class="select" name="city">
+                            <select class="selectpicker select select-city">
+                              <option>
+                                <span>Москва</span>
+                              </option>
+                              <option>
+                                <span>Санкт-Петербург</span>
+                              </option>
+                            </select>
+                        </div>
+                        <select class="selectpicker select select-lang">
+                            <option class="ru">RU</option>
+                            <option class="en">EN</option>
+                        </select>
+                    </div>
+                    <div class="authorization__bottom">
+                        <a href="#" class="authorization__login" onclick="$('#SignIn').arcticmodal()">
+                            <img src="images/login.svg" alt="login">
+                            <span>Войти</span>
+                        </a>
+                        <div class="separator">|</div>
+                        <a href="#" class="authorization__register">
+                            <span>Регистрация</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="fast-buy">
+                    <div class="fast-buy__title">
+                        Быстрая покупка
+                    </div>
+                    <div class="fast-buy__settings">
+                        <div class="fast-buy__selects">
+                            <div class="select" name="type">
+                                <select class="selectpicker type" title="Вид">
+                                  <option>
+                                    <span>Тентовая ткань</span>
+                                  </option>
+                                  <option>
+                                    <span>Ткань ПВХ</span>
+                                  </option>
+                                </select>
+                            </div>
+                            <div class="select" name="color">
+                                <select class="selectpicker type" title="Цвет">
+                                  <option>
+                                    <span>Черный</span>
+                                  </option>
+                                  <option>
+                                    <span>Зеленый</span>
+                                  </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="fast-buy__weight">
+                            <div class="fast-buy__weight--title">
+                                Вес материала
+                            </div>
+                            <div class="fast-buy__weight--inputs">
+                                <input placeholder="100">
+                                <input placeholder="2700">
+                            </div>
+                        </div>
+                        <div class="fast-buy__btn">
+                            <button class="btn btn-yellow">Купить</button>
+                        </div>
+                        <div class="more-parametrs">
+                            Расширенные параметры
+                        </div>
+                    </div>
+                </div>
+                <div class="header-contacts">
+                    <div class="phone-main">
+                        <a href="tel:88001234567">8 800 123 45 67</a>
+                    </div>
+                    <div class="phone">
+                        <a href="tel:88123052461">8 812 305 24 61</a>
+                    </div>
+                    <div class="phone">
+                        <a href="tel:88602441144">8 860 244 11 44</a>
+                    </div>
+                    <div class="email">
+                        <a href="mailto:mail@tarpstandart.ru">mail@tarpstandart.ru</a>
+                    </div>
+                </div>
+                <div class="basket">
+                    <div class="basket-icon">
+                        <img src="images/cart.svg" alt="cart">
+                    </div>
+                    <span>1</span>
+                </div>
+            </div>
+        </div>
+        <div class="menu-wrapper">
+            <div class="container">
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a href="about.html">
+                            О компании
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="suppliers.html">
+                            Поставщики
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#">
+                            Доставка и оплата
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#">
+                            Юридическая информация
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="services.html">
+                            Индивидуальные поставки
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="contacts.html">
+                            Контакты
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#">
+                            Партнерский кабинет
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="breadcrumbs">
+            <div class="container">
+                <div class="breadcrumbs__list">
+                    <div class="breadcrumbs__item">
+                        <a href="index.html">Главная</a>
+                        <div class="separator">
+                            <img src="images/separator.svg" alt="separator">
+                        </div>
+                    </div>
+                    <div class="breadcrumbs__item">
+                        <a href="services.html">Услуги и сервисы</a>
+                        <div class="separator">
+                            <img src="images/separator.svg" alt="separator">
+                        </div>
+                    </div>
+                    <div class="breadcrumbs__item active">
+                        <a href="services-card.html">Контейнерные поставки</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="services-card">
+            <div class="container">
+                <div class="card-info">
+                    <div class="card-info__img">
+                        <img src="images/incoterms.jpg" alt="incoterms">
+                    </div>
+                    <div class="card-info__title">
+                        Контейнерные поставки
+                    </div>
+                    <div class="card-info__text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam earum eius eum a doloremque nisi odit autem facilis, deleniti quasi, placeat quidem! Deleniti veniam laboriosam sed quas vero, at repellat quisquam accusamus. Repellendus sit, molestias laudantium
+                    </div>
+                </div>
+                <div class="services-card__text">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam earum eius eum a doloremque nisi odit autem facilis, 
+                        deleniti quasi, placeat quidem! Deleniti veniam laboriosam sed quas vero, at repellat quisquam accusamus. Repellendus sit, 
+                        molestias laudantium, facilis tempora animi porro doloribus voluptatem modi, quo alias dignissimos ex quas
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam earum eius eum a doloremque nisi odit autem facilis, 
+                        deleniti quasi, placeat quidem! Deleniti veniam laboriosam sed quas vero, at repellat quisquam accusamus. Repellendus sit, 
+                        molestias laudantium, facilis tempora animi porro doloribus voluptatem modi, quo alias dignissimos ex quas 
+                    </p>
+                </div>
+                <div class="services-card__table">
+                    <table class="table">
+                        <tr>
+                            <td class="table__title">
+                                Заголовок
+                            </td>
+                            <td class="table__title">
+                                Заголовок
+                            </td>
+                            <td class="table__title">
+                                Заголовок
+                            </td>
+                            <td class="table__title">
+                                Заголовок
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            </td>
+                            <td>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            </td>
+                            <td>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            </td>
+                            <td>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="services-card__video">
+                    <iframe width="100%" height="480" src="https://www.youtube.com/embed/6X4wuizqzEI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="feedback">
+        <div class="container">
+            <div class="feedback-content">
+                <div class="feedback-content__left">
+                    <div class="feedback-content__title">
+                        Форма обратной связи
+                    </div>
+                    <div class="feedback-content__subtitle">
+                        Заполните форму обратной связи <br>
+                        и мы с Вами свяжемся в самое ближайшее время
+                    </div>
+                    <div class="feedback-content__icon">
+                        <img src="images/email.svg" alt="email">
+                    </div>
+                </div>
+                <div class="feedback-content__right">
+                    <form action="" class="form">
+                        <div class="form__input">
+                            <input type="text" placeholder="Ваше имя">
+                        </div>
+                        <div class="form__input">
+                            <input type="email" placeholder="Ваше Email">
+                        </div>
+                        <div class="form__textarea">
+                            <textarea placeholder="Введите Ваше сообщение"></textarea>
+                        </div>
+                        <div class="form__submit">
+                            <div class="form__submit--text">
+                                Нажимая на кнопку “Отправить” я даю согласие <br>
+                                на обработку персональных данных в соответствии <br>
+                                с <a href="#">Политикой кофиденциальности</a>
+                            </div>
+                            <button type="submit" class="form__submit--btn btn2">
+                                Отправить
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">
+                    <a href="/">
+                        <img src="images/logo.png" alt="logo">
+                        <span>Оптовая продажа тканей и текстильных материалов с покрытием</span>
+                    </a>
+                </div>
+                <div class="social">
+                    <div class="social__text">
+                        Мы в соц. сетях:
+                    </div>
+                    <div class="social__list">
+                        <div class="social__item">
+                            <a href="#">
+                                <img src="images/facebook.svg" alt="facebook">
+                            </a>
+                        </div>
+                        <div class="social__item">
+                            <a href="#">
+                                <img src="images/vk.svg" alt="vk">
+                            </a>
+                        </div>
+                        <div class="social__item">
+                            <a href="#">
+                                <img src="images/instagram.svg" alt="instagram">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-contacts">
+                    <div class="phone-main">
+                        <a href="tel:88001234567">8 800 123 45 67</a>
+                    </div>
+                    <div class="phone">
+                        <a href="tel:88123052461">8 812 305 24 61</a>
+                    </div>
+                    <div class="phone">
+                        <a href="tel:88602441144">8 860 244 11 44</a>
+                    </div>
+                    <div class="email">
+                        <a href="mailto:mail@tarpstandart.ru">mail@tarpstandart.ru</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-menu">
+                <div class="footer-menu__item">
+                    <a href="#">
+                        О компании
+                    </a>
+                </div>
+                <div class="footer-menu__item">
+                    <a href="#">
+                        Поставщики
+                    </a>
+                </div>
+                <div class="footer-menu__item">
+                    <a href="#">
+                        Доставка и оплата
+                    </a>
+                </div>
+                <div class="footer-menu__item">
+                    <a href="#">
+                        Юридическая информация
+                    </a>
+                </div>
+                <div class="footer-menu__item">
+                    <a href="#">
+                        Индивидуальные поставки
+                    </a>
+                </div>
+                <div class="footer-menu__item">
+                    <a href="#">
+                        Контакты
+                    </a>
+                </div>
+                <div class="footer-menu__item">
+                    <a href="#">
+                        Партнерский кабинет
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    2020 copyright ООО “ТарпСтандарт”
+                </div>
+                <div class="politics">
+                    <a href="#">
+                        Политика конфиденциальности
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Sign in -->
+    <div style="display: none;">
+        <div class="box-modal" id="SignIn">
+            <div class="box-modal_close arcticmodal-close">
+                <img src="images/close.svg" alt="close">
+            </div>
+            <div class="box-modal__title">
+                Авторизация
+            </div>
+            <div class="box-modal__subtitle">
+                Введите ваши данные, что бы авторизоваться <br>на нашем сайте
+            </div>
+            <div class="box-modal__form">
+                <from class="form">
+                    <div class="form__input">
+                        <input type="email" placeholder="Введите адрес электронной почты" required>
+                    </div>
+                    <div class="form__input">
+                        <input type="password" placeholder="Введите пароль" required>
+                    </div>
+                    <div class="remember">
+                        <div class="remember__link">
+                            <a href="#">
+                                Забыли пароль?
+                            </a>
+                        </div>
+                        <div class="remember__checkbox">
+                            <input type="checkbox" name="checkbox" id="checkbox" class="custom-checkbox">
+                            <label for="checkbox">Запомнить меня</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn" onclick="$('#Success').arcticmodal()">Войти</button>
+                    <div class="form__small-text">
+                        Мы не передаем Ваши данные третьим лицам 
+                    </div>
+                </from>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Success -->
+    <div style="display: none;">
+        <div class="box-modal" id="Success">
+            <div class="box-modal_close arcticmodal-close">
+                <img src="images/close.svg" alt="close">
+            </div>
+            <div class="box-modal__title">
+                Ваша заявка принята
+            </div>
+            <div class="box-modal__success">
+                <img src="images/success.svg" alt="success">
+            </div>
+            <div class="box-modal__subtitle">
+                В ближайшее время мы свяжемся с Вами <br>
+                и ответим на вопросы
+            </div>
+            <div class="box-modal__form">
+                <from class="form">
+                    <button type="submit" class="btn">Закрыть</button>
+                </from>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!--- Bootstrap select -->
+    <script src="js/bootstrap-select.min.js"></script>
+    <!-- ArcticModal -->
+    <script src="js/jquery.arcticmodal-0.3.min.js"></script>
+    <!--- jQuery maskedinput -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"></script>
+    <!--- SweetAlert -->
+    <script src="js/sweetAlert.js"></script>
+    <!-- Fancybox -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

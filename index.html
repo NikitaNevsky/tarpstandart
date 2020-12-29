@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!--- Bootstrap select -->
     <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <!-- ArcticModal -->
+    <link rel="stylesheet" href="css/jquery.arcticmodal-0.3.css">
     <!--- OWL Carousel -->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -38,7 +40,7 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <a href="/">
+                    <a href="index.html">
                         <img src="images/logo.png" alt="logo">
                         <span>Оптовая продажа тканей и текстильных материалов с покрытием</span>
                     </a>
@@ -61,7 +63,7 @@
                         </select>
                     </div>
                     <div class="authorization__bottom">
-                        <a href="#" class="authorization__login">
+                        <a href="#" class="authorization__login" onclick="$('#SignIn').arcticmodal()">
                             <img src="images/login.svg" alt="login">
                             <span>Войти</span>
                         </a>
@@ -141,12 +143,12 @@
             <div class="container">
                 <ul class="menu">
                     <li class="menu__item">
-                        <a href="#">
+                        <a href="about.html">
                             О компании
                         </a>
                     </li>
                     <li class="menu__item">
-                        <a href="#">
+                        <a href="suppliers.html">
                             Поставщики
                         </a>
                     </li>
@@ -161,12 +163,12 @@
                         </a>
                     </li>
                     <li class="menu__item">
-                        <a href="#">
+                        <a href="services.html">
                             Индивидуальные поставки
                         </a>
                     </li>
                     <li class="menu__item">
-                        <a href="#">
+                        <a href="contacts.html">
                             Контакты
                         </a>
                     </li>
@@ -732,6 +734,70 @@
         </div>
     </footer>
 
+    <!-- Modal Sign in -->
+    <div style="display: none;">
+        <div class="box-modal" id="SignIn">
+            <div class="box-modal_close arcticmodal-close">
+                <img src="images/close.svg" alt="close">
+            </div>
+            <div class="box-modal__title">
+                Авторизация
+            </div>
+            <div class="box-modal__subtitle">
+                Введите ваши данные, что бы авторизоваться <br>на нашем сайте
+            </div>
+            <div class="box-modal__form">
+                <from class="form">
+                    <div class="form__input">
+                        <input type="email" placeholder="Введите адрес электронной почты" required>
+                    </div>
+                    <div class="form__input">
+                        <input type="password" placeholder="Введите пароль" required>
+                    </div>
+                    <div class="remember">
+                        <div class="remember__link">
+                            <a href="#">
+                                Забыли пароль?
+                            </a>
+                        </div>
+                        <div class="remember__checkbox">
+                            <input type="checkbox" name="checkbox" id="checkbox" class="custom-checkbox">
+                            <label for="checkbox">Запомнить меня</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn" onclick="$('#Success').arcticmodal()">Войти</button>
+                    <div class="form__small-text">
+                        Мы не передаем Ваши данные третьим лицам 
+                    </div>
+                </from>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Success -->
+    <div style="display: none;">
+        <div class="box-modal" id="Success">
+            <div class="box-modal_close arcticmodal-close">
+                <img src="images/close.svg" alt="close">
+            </div>
+            <div class="box-modal__title">
+                Ваша заявка принята
+            </div>
+            <div class="box-modal__success">
+                <img src="images/success.svg" alt="success">
+            </div>
+            <div class="box-modal__subtitle">
+                В ближайшее время мы свяжемся с Вами <br>
+                и ответим на вопросы
+            </div>
+            <div class="box-modal__form">
+                <from class="form">
+                    <button type="submit" class="btn">Закрыть</button>
+                </from>
+            </div>
+        </div>
+    </div>
+
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -739,6 +805,8 @@
     <script src="js/bootstrap.min.js"></script>
     <!--- Bootstrap select -->
     <script src="js/bootstrap-select.min.js"></script>
+    <!-- ArcticModal -->
+    <script src="js/jquery.arcticmodal-0.3.min.js"></script>
     <!--- jQuery maskedinput -->
     <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"></script>
     <!--- SweetAlert -->
